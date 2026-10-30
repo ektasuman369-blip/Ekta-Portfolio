@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101827;
+    color: white;
+    line-height: 1.7;
+}
+
+/* Navigation */
+
+header {
+    background: #172337;
+    padding: 18px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #65d6c4;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #65d6c4;
+}
+
+/* Home Section */
+
+.hero {
+    min-height: 430px;
+    text-align: center;
+    padding: 110px 20px;
+}
+
+.welcome {
+    color: #65d6c4;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #65d6c4;
+}
+
+.hero h3 {
+    margin: 10px;
+    font-size: 22px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 10px auto;
+}
+
+/* Common Sections */
+
+section {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+section h2 {
+    color: #65d6c4;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+section p {
+    max-width: 750px;
+    margin: auto;
+}
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    background: #65d6c4;
+    color: #101827;
+    padding: 10px 22px;
+    margin-top: 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+/* Skills */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.cards div {
+    background: #22334a;
+    padding: 18px 30px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.cards div:hover {
+    background: #65d6c4;
+    color: #101827;
+}
+
+/* Projects and Education */
+
+.project {
+    background: #22334a;
+    padding: 25px;
+    margin: 18px auto;
+    max-width: 750px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    color: #65d6c4;
+    margin-bottom: 10px;
+}
+
+/* Contact */
+
+.contact-info {
+    margin: 15px auto;
+}
+
+.contact-info a {
+    color: #65d6c4;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+    background: #172337;
+    text-align: center;
+    padding: 20px;
+    color: #cccccc;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h3 {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+}
